@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: discord-bot
+    env: python
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    pythonVersion: 3.10.12
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: SOURCE_CHANNEL_ID
+        sync: false
+      - key: ARCHIVE_CHANNEL_ID
+        sync: false
