@@ -2,6 +2,7 @@ services:
   - type: web
     name: discord-bot
     env: python
+    pythonVersion: 3.10.12  # ← これを必ず追加！
     plan: free
     region: singapore
     branch: main
