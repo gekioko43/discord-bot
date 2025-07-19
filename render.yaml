@@ -14,3 +14,7 @@ services:
         sync: false
       - key: ARCHIVE_CHANNEL_ID
         sync: false
+# render.yaml に以下を追加（参考として）
+build:
+  env:
+    PYTHON_VERSION: 3.10.12
