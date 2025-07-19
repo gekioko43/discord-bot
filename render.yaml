@@ -15,6 +15,3 @@ services:
       - key: ARCHIVE_CHANNEL_ID
         sync: false
 
-build:
-  env:
-    PYTHON_VERSION: 3.10.12
