@@ -7,9 +7,6 @@ services:
     branch: main
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
-    build:
-      env:
-        PYTHON_VERSION: 3.10.12
     envVars:
       - key: DISCORD_TOKEN
         sync: false
@@ -17,3 +14,7 @@ services:
         sync: false
       - key: ARCHIVE_CHANNEL_ID
         sync: false
+
+build:
+  env:
+    PYTHON_VERSION: 3.10.12
